@@ -252,7 +252,7 @@ function endGame() {
 }
 
 function tweetScore() {
-    const tweetText = `I scored ${score} in the @sign Snake Game! Can you beat me? Play here: [Your Vercel URL]`;
+    const tweetText = `I scored ${score} in the @sign Snake Game! Can you beat me? Play here: https://snake-game-eight-taupe.vercel.app`;
     const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
     window.open(tweetUrl, '_blank');
 }
