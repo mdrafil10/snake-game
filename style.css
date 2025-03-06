@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+    position: relative;
+    text-align: center;
+}
+
+canvas {
+    border: 2px solid black;
+    background-color: orange;
+}
+
+#score {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#rules-screen, #game-over-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 10;
+    width: 300px;
+}
+
+#rules-screen h1, #game-over-screen h1 {
+    color: #ff4500;
+    margin: 0 0 10px 0;
+    font-size: 24px;
+}
+
+#rules-box {
+    max-height: 150px;
+    overflow-y: auto;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ff4500;
+    background: #fff;
+    border-radius: 5px;
+}
+
+#rules-box p {
+    margin: 0 0 5px 0;
+}
+
+#rules-box ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #ff6347;
+}
+
+body::before {
+    content: "@sign";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.5);
+    z-index: -1;
+}
